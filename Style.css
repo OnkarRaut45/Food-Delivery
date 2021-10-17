@@ -1,0 +1,195 @@
+/*css reset to avoid extra blank spaces*/
+*{
+  padding: 0px;
+  margin: 0px;
+}
+/*Navbar stylesheet*/
+#Navbar{
+  position: relative;
+}
+/*Using psudo selector to give background to Navbar*/
+#Navbar::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(3, 24, 66);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+#logo{
+  width: 100px;
+  height: 79px;
+  margin: 5px;
+  border-radius: 50%;
+}
+#Navbar ul{
+  /*creating flex box to get list element properly*/
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+/*Targeting the hyprlink */
+#Navbar ul li a{
+  color: white;
+  display: block;
+  padding: 10px;
+  margin: 6px;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+/*giving hover effect to content of Navbar*/
+#Navbar ul li a:hover{
+  background-color: white;
+  color: brown;
+  border-radius: 15px;
+}
+/*Section - Home stylesheet*/
+#home{
+  height: 484px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*Using pusedo slector to give background to home section*/
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url('media/bg2.jpg') no-repeat center center/cover;
+  height: 77%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+#home h1{
+  font-family: Rampart One;
+  color: #2b1c0a;
+}
+.para{
+  font-family:Anton;
+  color: #185957;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+/*Our Services section stylesheet*/
+.items{
+  border: 2px solid red;
+  border-radius: 20px;
+  margin: 5px;
+  background-color: rgb(228, 183, 178);
+}
+.Services img{
+  height: 170px;
+  display: block;
+  margin: auto;
+}
+#Services-container h1{
+    font-family: Oswald;
+}
+#Services-container {
+  /*margin-top: 126px;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Services{
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+}
+
+/*Clients Section*/
+#Client-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Client-section h1{
+  font-family: Oswald;
+}
+.clients{
+    margin: 50px;
+    padding: 16px;
+}
+.clients img{
+  height: 100px;
+}
+
+/*ContactUs stylesheet*/
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content h3{
+  font-size: 1.2rem;
+}
+#ContactUs{
+  background-color: rgb(198, 134, 193);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+#ContactUs h1{
+  font-family: Oswald;
+}
+input[type="text"],
+input[type="email"],
+input[type="textarea"]{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+}
+textarea{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 12px;
+}
+/*Footer section stylesheet*/
+#Footer{
+  background-color: black;
+  height: 35px;
+}
+#Footer h6{
+  color: white;
+  text-align: center;
+  padding: 9px;
+  font-size: 0.8rem;
+}
+
+/*utility classes*/
+.h-primary{
+  font-size: 3.2rem;
+  padding: 5px;
+  text-align: center;
+}
+.h-secondary{
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.9rem;
+  font-family: Oswald;
+}
+.button{
+  font-family: fantasy;
+  font-size: 1.5rem;
+  color: brown;
+  background-color: tomato;
+  border-radius: 30px;
+  margin: 10px;
+  padding: 9px;
+  cursor: pointer;
+}
+.p-primary{
+  font-size: 1rem;
+  font-family: Oxygen;
+  padding: 10px;
+}
